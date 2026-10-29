@@ -1,26 +1,66 @@
-# Beenish Kashif — Portfolio Website
+# Beenish: Single-Page CV Website
 
-A responsive single-page portfolio built with semantic HTML, CSS, and vanilla JavaScript. The visual system uses deep teal (`#0B2E36`), warm amber (`#F6B93B`), pale teal, accessible contrast, and subtle motion with reduced-motion support.
+Lab Task 1: present my CV as a single-page (landing page) website where scrolling is allowed.
 
-## Project structure
+## Technologies
 
-- `index.html` — page content, metadata, project cards, links, certificate, and contact details
-- `style.css` — responsive layout, theme, animations, hover states, and print styles
-- `script.js` — mobile navigation, section reveal, and scroll interactions
-- `Beenish_BSCS_Resume.pdf` — downloadable CV
-- `google-coursera-certificate.png` — Google/Coursera certificate preview
-- `favicon.svg` — browser-tab icon
+- HTML5 (semantic sections)
+- CSS3 (Flexbox, CSS Grid, CSS variables, media queries)
+- Vanilla JavaScript (scroll effects and the Web Crypto API demo)
+- Google Fonts: Bricolage Grotesque and Figtree
+- No frameworks and no JavaScript libraries
 
-## Projects
+## AI tool used
 
-1. Secure File Transfer Through Cryptography — Python, Gradio, AES, RSA, SHA-256
-2. Student Attendance Management System — Java Swing, OOP, file serialization
-3. BeanCraft Coffee Storefront — HTML5, CSS3, JavaScript, responsive UI; includes live and GitHub links
+Claude (Anthropic) was used to generate the first version of the code. I reviewed it, edited the content, and tested it myself.
 
-## Run locally
+## Prompt used
 
-Open `index.html` in a modern browser. No build step is required. An internet connection is needed for embedded YouTube videos.
+> Act as an expert website designer. Create a single-page CV landing page (scrolling allowed) from my uploaded CV.
+> The design must be eye-catching and unique, with a colour palette chosen using colour psychology, and the layout must follow the order of my CV.
+> Add my photo, my Google certificate with its verification link, and a navigation bar that jumps to each section.
+> Use readable, standard font sizes, a polished look, and make it responsive for mobile screens.
+> Make the design suitable for an experienced teacher to evaluate.
 
-## Before publishing
+Follow-up changes I requested: update to 5th semester, remove marks from ICS and Matriculation, add the certificate, increase font sizes, and make the design more creative with an interactive demo.
 
-Verify contact details, social profile URLs, project descriptions, YouTube links, and the certificate verification link. Test the layout at desktop and mobile widths. The BeanCraft project uses the supplied live website and repository links.
+## Features
+
+- Sticky navigation bar with smooth scrolling to each section
+- Hero section with name, role, and photo
+- Quick facts: CGPA, semester, projects, scholarship
+- Sections: About, Education, Technical Skills, Projects, Certifications and Achievements, Contact
+- Google certificate with a verification link
+- Interactive demo: encrypt, decrypt and tamper with a message using AES-256-GCM and SHA-256 (Web Crypto API)
+- Scroll progress bar, active menu highlight, back-to-top button, and an entrance animation in the hero
+- Responsive layout (desktop, tablet, mobile)
+- Keyboard focus styles and print-friendly layout
+
+## Design choices
+
+- **Deep teal (#0B2E36):** trust, focus, and technology
+- **Amber (#F6B93B):** used only for buttons and highlights to draw attention
+- **White and light teal backgrounds:** clean and easy to read
+- One accent colour, two fonts, and a consistent spacing scale
+
+## Folder structure
+
+```
+cv-single-page/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── images/
+    ├── photo.jpg
+    └── certificate.png
+```
+
+## How to run
+
+1. Download or clone the folder.
+2. Open `index.html` in any web browser.
+
+## Author
+
+Beenish , BSCS, Qarshi University, Lahore
